@@ -1,0 +1,14 @@
+arxiv
+pymupdf
+sentence-transformers
+chromadb
+rank-bm25
+langchain-text-splitters
+anthropic
+fastapi
+uvicorn[standard]
+streamlit
+python-dotenv
+ragas
+datasets
+python-multipart

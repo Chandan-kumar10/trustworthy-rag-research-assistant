@@ -1,0 +1,251 @@
+[
+  {
+    "question": "What precision at 10 (P@10) and NDCG at 10 (NDCG@10) scores did Guardian Crawler achieve under risk-based reranking on the synthetic 900-document corpus?",
+    "expected_paper_id": "2608.08994v1",
+    "expected_paper_title": "Guardian Crawler: Retrieval-First Knowledge Discovery with Bounded LLM Augmentation for Noisy Web Intelligence",
+    "expected_answer": "P@10 = 1.00 and NDCG@10 = 0.94.",
+    "answerable": true
+  },
+  {
+    "question": "According to the automated LLM judge, how many of the 41 evaluable generated bullets from Guardian Crawler were classified as supported?",
+    "expected_paper_id": "2608.08994v1",
+    "expected_paper_title": "Guardian Crawler: Retrieval-First Knowledge Discovery with Bounded LLM Augmentation for Noisy Web Intelligence",
+    "expected_answer": "36 bullets were classified as supported.",
+    "answerable": true
+  },
+  {
+    "question": "What is the purpose of the Ragas framework in the context of Retrieval Augmented Generation?",
+    "expected_paper_id": "2309.15217v2",
+    "expected_paper_title": "Ragas: Automated Evaluation of Retrieval Augmented Generation",
+    "expected_answer": "Ragas provides a reference‑free way to evaluate RAG pipelines across retrieval relevance, faithful use of passages, and generation quality.",
+    "answerable": true
+  },
+  {
+    "question": "Which evaluation challenge for Retrieval Augmented Generation does Ragas address without using ground‑truth human annotations?",
+    "expected_paper_id": "2309.15217v2",
+    "expected_paper_title": "Ragas: Automated Evaluation of Retrieval Augmented Generation",
+    "expected_answer": "It enables assessment of retrieval relevance, LLM faithfulness to retrieved context, and overall generation quality without human labels.",
+    "answerable": true
+  },
+  {
+    "question": "What limitation of current Large Language Models does context-aware cognitive augmentation aim to overcome?",
+    "expected_paper_id": "2504.13684v1",
+    "expected_paper_title": "Intelligent Interaction Strategies for Context-Aware Cognitive Augmentation",
+    "expected_answer": "Their reactive nature that lacks real-time adaptation to users' cognitive states.",
+    "answerable": true
+  },
+  {
+    "question": "In the think-aloud exhibition study, what cognitive challenges were identified when individuals interact with multi-modal information?",
+    "expected_paper_id": "2504.13684v1",
+    "expected_paper_title": "Intelligent Interaction Strategies for Context-Aware Cognitive Augmentation",
+    "expected_answer": "Difficulties in structuring, retrieving, and applying knowledge.",
+    "answerable": true
+  },
+  {
+    "question": "What optimization technique does CARROT employ to find the optimal chunk combination order for retrieval-augmented generation?",
+    "expected_paper_id": "2411.00744v2",
+    "expected_paper_title": "CARROT: A Learned Cost-Constrained Retrieval Optimization System for RAG",
+    "expected_answer": "Monte Carlo Tree Search (MCTS).",
+    "answerable": true
+  },
+  {
+    "question": "According to experimental results, how much performance improvement does CARROT achieve over baseline models?",
+    "expected_paper_id": "2411.00744v2",
+    "expected_paper_title": "CARROT: A Learned Cost-Constrained Retrieval Optimization System for RAG",
+    "expected_answer": "Up to 30% improvement.",
+    "answerable": true
+  },
+  {
+    "question": "What are the exact EM and F1 improvements reported for IGMiRAG compared to the state-of-the-art baseline?",
+    "expected_paper_id": "2602.07525v1",
+    "expected_paper_title": "IGMiRAG: Intuition-Guided Retrieval-Augmented Generation with Adaptive Mining of In-Depth Memory",
+    "expected_answer": "4.8% EM and 5.0% F1",
+    "answerable": true
+  },
+  {
+    "question": "How does IGMiRAG adjust mining depth and memory window when processing a query?",
+    "expected_paper_id": "2602.07525v1",
+    "expected_paper_title": "IGMiRAG: Intuition-Guided Retrieval-Augmented Generation with Adaptive Mining of In-Depth Memory",
+    "expected_answer": "It uses a question parser to distill intuitive strategies that control mining depth and memory window, activating instantaneous memories as anchors via dual-focus retrieval.",
+    "answerable": true
+  },
+  {
+    "question": "What improvement in MRR@10 does Direct Document Relevance Optimization (DDRO) achieve on the MS MARCO document benchmark?",
+    "expected_paper_id": "2504.05181v2",
+    "expected_paper_title": "Lightweight and Direct Document Relevance Optimization for Generative Information Retrieval",
+    "expected_answer": "A 7.4% improvement in MRR@10.",
+    "answerable": true
+  },
+  {
+    "question": "How does Direct Document Relevance Optimization (DDRO) differ from reinforcement learning-based methods such as Reinforcement Learning from Relevance Feedback (RLRF) in its optimization strategy?",
+    "expected_paper_id": "2504.05181v2",
+    "expected_paper_title": "Lightweight and Direct Document Relevance Optimization for Generative Information Retrieval",
+    "expected_answer": "DDRO directly optimizes pairwise ranking without using explicit reward modeling or reinforcement learning.",
+    "answerable": true
+  },
+  {
+    "question": "What is the purpose of MusT‑RAG in music question answering?",
+    "expected_paper_id": "2507.23334v2",
+    "expected_paper_title": "MUST-RAG: MUSical Text Question Answering with Retrieval Augmented Generation",
+    "expected_answer": "MusT‑RAG adapts general‑purpose LLMs for text‑only music QA by using retrieval‑augmented generation.",
+    "answerable": true
+  },
+  {
+    "question": "How does MusWikiDB compare to a general Wikipedia corpus when used in the MusT‑RAG framework?",
+    "expected_paper_id": "2507.23334v2",
+    "expected_paper_title": "MUST-RAG: MUSical Text Question Answering with Retrieval Augmented Generation",
+    "expected_answer": "MusWikiDB is substantially more effective, providing better performance and higher computational efficiency than a general Wikipedia corpus.",
+    "answerable": true
+  },
+  {
+    "question": "What is the name of the membership inference technique introduced for targeting documents in a Retrieval-Augmented Generation datastore?",
+    "expected_paper_id": "2502.00306v2",
+    "expected_paper_title": "Riddle Me This! Stealthy Membership Inference for Retrieval-Augmented Generation",
+    "expected_answer": "Interrogation Attack (IA).",
+    "answerable": true
+  },
+  {
+    "question": "How many natural-text queries does the Interrogation Attack need to successfully infer document membership while remaining stealthy?",
+    "expected_paper_id": "2502.00306v2",
+    "expected_paper_title": "Riddle Me This! Stealthy Membership Inference for Retrieval-Augmented Generation",
+    "expected_answer": "Approximately 30 queries.",
+    "answerable": true
+  },
+  {
+    "question": "What is the role of the Landmark Knowledge Agent in the LLandMark framework?",
+    "expected_paper_id": "2603.02888v1",
+    "expected_paper_title": "LLandMark: A Multi-Agent Framework for Landmark-Aware Multimodal Interactive Video Retrieval",
+    "expected_answer": "It detects cultural or spatial landmarks and reformulates them into descriptive visual prompts to enhance CLIP-based semantic matching for Vietnamese scenes.",
+    "answerable": true
+  },
+  {
+    "question": "How does the LLM-assisted image-to-image pipeline in LLandMark eliminate the need for manual image input?",
+    "expected_paper_id": "2603.02888v1",
+    "expected_paper_title": "LLandMark: A Multi-Agent Framework for Landmark-Aware Multimodal Interactive Video Retrieval",
+    "expected_answer": "It uses Gemini 2.5 Flash to autonomously detect landmarks, generate image search queries, retrieve representative images, and perform CLIP-based visual similarity matching.",
+    "answerable": true
+  },
+  {
+    "question": "What level of execution accuracy improvement does EVOR achieve over methods such as Reflexion and DocPrompting?",
+    "expected_paper_id": "2402.12317v2",
+    "expected_paper_title": "EVOR: Evolving Retrieval for Code Generation",
+    "expected_answer": "Two to four times higher execution accuracy.",
+    "answerable": true
+  },
+  {
+    "question": "What is the name of the benchmark consisting of four new datasets for evaluating retrieval-augmented code generation introduced in the study?",
+    "expected_paper_id": "2402.12317v2",
+    "expected_paper_title": "EVOR: Evolving Retrieval for Code Generation",
+    "expected_answer": "EVOR-BENCH.",
+    "answerable": true
+  },
+  {
+    "question": "What is InF-IR and what type of training data does it provide for instruction-following retrieval models?",
+    "expected_paper_id": "2505.21439v1",
+    "expected_paper_title": "Towards Better Instruction Following Retrieval Models",
+    "expected_answer": "InF-IR is a large‑scale corpus containing over 38,000 <instruction, query, passage> triplets plus two hard negative examples per positive triplet.",
+    "answerable": true
+  },
+  {
+    "question": "By how much does InF-Embed increase p‑MRR on instruction‑based retrieval benchmarks compared to competitive baselines?",
+    "expected_paper_id": "2505.21439v1",
+    "expected_paper_title": "Towards Better Instruction Following Retrieval Models",
+    "expected_answer": "InF-Embed improves p‑MRR by 8.1% over the baselines.",
+    "answerable": true
+  },
+  {
+    "question": "What impact do intent-preserving lexical variations (e.g., typos) have on the planning signal of Planning Ahead in Generative Retrieval (PAG)?",
+    "expected_paper_id": "2604.23396v1",
+    "expected_paper_title": "Lost in Decoding? Reproducing and Stress-Testing the Look-Ahead Prior in Generative Retrieval",
+    "expected_answer": "They can cause plan collapse, weakening the look-ahead prior and reverting decoding toward unguided search.",
+    "answerable": true
+  },
+  {
+    "question": "Which query-side mitigation strategy most effectively recovers performance for non‑English mMARCO queries against an English index when using Planning Ahead in Generative Retrieval (PAG)?",
+    "expected_paper_id": "2604.23396v1",
+    "expected_paper_title": "Lost in Decoding? Reproducing and Stress-Testing the Look-Ahead Prior in Generative Retrieval",
+    "expected_answer": "Query translation provides the strongest recovery.",
+    "answerable": true
+  },
+  {
+    "question": "What is the primary function of the wearable system named Factually?",
+    "expected_paper_id": "2504.17204v1",
+    "expected_paper_title": "Factually: Exploring Wearable Fact-Checking for Augmented Truth Discernment",
+    "expected_answer": "Factually provides proactive fact-checking by alerting users to potential falsehoods via vibrotactile feedback.",
+    "answerable": true
+  },
+  {
+    "question": "Which three capabilities does the proposed voice-based learning companion aim to deliver?",
+    "expected_paper_id": "2504.17204v1",
+    "expected_paper_title": "Factually: Exploring Wearable Fact-Checking for Augmented Truth Discernment",
+    "expected_answer": "It enables contextual interactive quizzes, real-time misinformation detection, and spoken language correction with prompting hints.",
+    "answerable": true
+  },
+  {
+    "question": "What limitation of traditional machine‑learning ranking approaches do neural ranking models aim to overcome?",
+    "expected_paper_id": "2102.11903v2",
+    "expected_paper_title": "Neural ranking models for document retrieval",
+    "expected_answer": "The reliance on hand‑crafted features.",
+    "answerable": true
+  },
+  {
+    "question": "Besides documents, what other types of items are mentioned as analogous retrieval tasks for neural ranking models?",
+    "expected_paper_id": "2102.11903v2",
+    "expected_paper_title": "Neural ranking models for document retrieval",
+    "expected_answer": "Answers, images, and videos (structured documents).",
+    "answerable": true
+  },
+  {
+    "question": "What limitations of training-based indexing in generative retrieval does Few-Shot GR aim to address?",
+    "expected_paper_id": "2408.02152v3",
+    "expected_paper_title": "Generative Retrieval with Few-shot Indexing",
+    "expected_answer": "High training costs, under‑utilisation of pre‑trained LLM knowledge, and limited adaptability to dynamic document corpora.",
+    "answerable": true
+  },
+  {
+    "question": "How does Few-Shot GR use docids during the indexing and retrieval processes?",
+    "expected_paper_id": "2408.02152v3",
+    "expected_paper_title": "Generative Retrieval with Few-shot Indexing",
+    "expected_answer": "It prompts an LLM to generate docids for all corpus documents to form a docid bank, then constrains the LLM to generate a docid from that bank for a query and maps it back to the corresponding document.",
+    "answerable": true
+  },
+  {
+    "question": "What kind of targets can Instant Motion Tracking robustly track?",
+    "expected_paper_id": "1907.06796v1",
+    "expected_paper_title": "Instant Motion Tracking and Its Applications to Augmented Reality",
+    "expected_answer": "It can robustly track planar targets.",
+    "answerable": true
+  },
+  {
+    "question": "Does Instant Motion Tracking require calibration to achieve relative‑scale 6DoF tracking?",
+    "expected_paper_id": "1907.06796v1",
+    "expected_paper_title": "Instant Motion Tracking and Its Applications to Augmented Reality",
+    "expected_answer": "No, it performs relative‑scale 6DoF tracking without calibration.",
+    "answerable": true
+  },
+  {
+    "question": "What is the name of the retrieval-augmented system designed to preserve expert knowledge in the energy sector?",
+    "expected_paper_id": "2603.14541v1",
+    "expected_paper_title": "Expert Mind: A Retrieval-Augmented Architecture for Expert Knowledge Preservation in the Energy Sector",
+    "expected_answer": "Expert Mind",
+    "answerable": true
+  },
+  {
+    "question": "Which technologies does Expert Mind combine to capture and make organizational expertise queryable?",
+    "expected_paper_id": "2603.14541v1",
+    "expected_paper_title": "Expert Mind: A Retrieval-Augmented Architecture for Expert Knowledge Preservation in the Energy Sector",
+    "expected_answer": "Retrieval-Augmented Generation, large language models, and multimodal capture techniques",
+    "answerable": true
+  },
+
+  {"question": "Who is Virat Kohli?", "expected_paper_id": null, "expected_answer": null, "answerable": false},
+  {"question": "What is the capital of France?", "expected_paper_id": null, "expected_answer": null, "answerable": false},
+  {"question": "Who won the 2018 football world cup?", "expected_paper_id": null, "expected_answer": null, "answerable": false},
+  {"question": "How do I cook biryani?", "expected_paper_id": null, "expected_answer": null, "answerable": false},
+  {"question": "What is the price of Bitcoin today?", "expected_paper_id": null, "expected_answer": null, "answerable": false},
+  {"question": "Explain the plot of the movie Titanic.", "expected_paper_id": null, "expected_answer": null, "answerable": false},
+  {"question": "What are the symptoms of diabetes?", "expected_paper_id": null, "expected_answer": null, "answerable": false},
+  {"question": "Who is the prime minister of India?", "expected_paper_id": null, "expected_answer": null, "answerable": false},
+  {"question": "How does photosynthesis work?", "expected_paper_id": null, "expected_answer": null, "answerable": false},
+  {"question": "What is the best programming language for game development?", "expected_paper_id": null, "expected_answer": null, "answerable": false}
+]

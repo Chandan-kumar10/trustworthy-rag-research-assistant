@@ -1,0 +1,52 @@
+[
+  {
+    "original": "36 of the 41 evaluable generated bullets were classified as supported by the automated LLM judge.",
+    "claim": "36 of the 85 evaluable generated bullets were classified as supported by the automated LLM judge.",
+    "verifier_score": 0.995,
+    "label": false
+  },
+  {
+    "original": "Ragas is a framework that automatically evaluates Retrieval‑Augmented Generation pipelines without needing reference answers.",
+    "claim": "Ragas is a framework that automatically evaluates Retrieval‑Augmented Generation pipelines with needing reference answers.",
+    "verifier_score": 0.02,
+    "label": false
+  },
+  {
+    "original": "The framework targets fast, reference‑free assessment, offering proxies for correctness and passage usefulness, and integrates with common RAG toolkits such as llama‑index and Langchain.",
+    "claim": "The framework targets slow, reference‑free assessment, offering proxies for correctness and passage usefulness, and integrates with common RAG toolkits such as llama‑index and Langchain.",
+    "verifier_score": 0.994,
+    "label": false
+  },
+  
+  {
+    "original": "CARROT yields roughly a 30 % performance gain over baseline models, as shown by the experimental results.",
+    "claim": "CARROT yields roughly a 63 % performance gain over baseline models, as shown by the experimental results.",
+    "verifier_score": 0.023,
+    "label": false
+  },
+  {
+    "original": "IGMiRAG improves over the state‑of‑the‑art baseline by 4.8 % in Exact Match (EM) and 5.0 % in F1 overall【1】.",
+    "claim": "IGMiRAG improves over the state‑of‑the‑art baseline by 4.8 % in Exact Match (EM) and 11.5 % in F1 overall【1】.",
+    "verifier_score": 0.011,
+    "label": false
+  },
+  
+  {
+    "original": "DDRO improves MRR@10 on the MS MARCO document benchmark by 7.4%",
+    "claim": "DDRO improves MRR@10 on the MS MARCO document benchmark by 16.3%",
+    "verifier_score": 0.118,
+    "label": false
+  },
+  {
+    "original": "DDRO directly optimizes GenIR models with pairwise ranking supervision, aligning token‑level docid generation to document‑level relevance without any reward model or reinforcement step.",
+    "claim": "DDRO directly optimizes GenIR models with pairwise ranking supervision, aligning token‑level docid generation to document‑level relevance with any reward model or reinforcement step.",
+    "verifier_score": 0.065,
+    "label": false
+  },
+  {
+    "original": "DDRO therefore eliminates the need for explicit reward modeling and reinforcement fine‑tuning, simplifying the training pipeline compared to RLRF.",
+    "claim": "DDRO therefore requires the need for explicit reward modeling and reinforcement fine‑tuning, simplifying the training pipeline compared to RLRF.",
+    "verifier_score": 0.002,
+    "label": false
+  }
+]
