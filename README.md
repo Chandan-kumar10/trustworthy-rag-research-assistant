@@ -149,6 +149,18 @@ Evaluated on 31 statements: 21 supported, 2 unsupported (manually labelled) and 
 
 The verifier is conservative: it rejects negation flips and large numeric changes but misses many correct, heavily paraphrased claims, and it accepted claims where only one number ("41" to "85") or one adjective ("fast" to "slow") was changed. "Could not verify" in the UI therefore does not mean the statement is wrong.
 
+### End-to-end comparison (34 answerable, 10 unanswerable; correctness and refusals judged by an LLM)
+
+| Version | Correct | Wrongly refused | Hallucinated | Verified share |
+|---|---|---|---|---|
+| A. Plain dense RAG | 26/34 (76%) | n/a | 1/10 | 46% |
+| B. A + abstention | 26/34 (76%) | 0/34 | 1/10 | n/a |
+| D. Full system | 31/34 (91%) | 0/34 | 0/10 | 57% |
+
+The full system differs from plain RAG in several components at once (hybrid retrieval, reranking, strict prompt, abstention, verification), so the gain cannot be attributed to one of them. Abstention alone changed nothing on this test set, because the unanswerable questions are easy and the LLM often declines by itself. The single "hallucination" in plain RAG was a correct fact answered from the model's own knowledge rather than from the papers. The LLM judge made at least one error (a correct answer marked wrong), so these figures are approximate.
+
+
+
 ## Limitations
 
 - Small test set; questions derived from abstracts.
@@ -160,6 +172,8 @@ The verifier is conservative: it rejects negation flips and large numeric change
 - Free-tier Groq rate limits can slow answers.
 - Retrieved passages are sent to the Groq API; do not upload confidential documents unless that is acceptable.
 - Chat history is stored in the browser only.
+- The citation verifier can accept a claim that its source does not support. Example: for the out-of-corpus question "What is the capital of France?", plain RAG answered "Paris" from the model's own knowledge, and the verifier marked it supported (score 0.87) against an unrelated passage from a transfer-learning paper that only mentions France in a football example. The passage about France that the corpus does contain states the opposite ("The capital of France is Berlin" as an adversarial example).
+- A lexical-overlap gate that rejected windows sharing fewer than half of the claim's content words removed this error but also rejected 3 of 10 correctly verified claims (recall 0.48 to 0.33), so it was not adopted.
 
 ## Future work
 
