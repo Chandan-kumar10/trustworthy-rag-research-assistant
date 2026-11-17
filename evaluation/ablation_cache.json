@@ -1,0 +1,710 @@
+{
+  "What precision at 10 (P@10) and NDCG at 10 (NDCG@10) scores did Guardian Crawler achieve under risk-based reranking on the synthetic 900-document corpus?": {
+    "answerable": true,
+    "top_score": 0.73,
+    "a_text": "Guardian Crawler’s risk‑aware reranking (BM25 + Risk at α = 1.0) achieved a perfect precision at 10 (P@10 = 1.00) and an NDCG@10 of 0.94 on the 900‑document synthetic corpus【1】.",
+    "a_ver": {
+      "supported": 0,
+      "total": 1
+    },
+    "d_kind": "grounded",
+    "d_text": "- P@10 = 1.00 and NDCG@10 = 0.94 under risk‑based reranking on the synthetic 900‑document corpus【1†L1-L3】【2†L1-L3】",
+    "d_ver": {
+      "supported": 1,
+      "total": 1
+    },
+    "a_correct": true,
+    "d_correct": true
+  },
+  "According to the automated LLM judge, how many of the 41 evaluable generated bullets from Guardian Crawler were classified as supported?": {
+    "answerable": true,
+    "top_score": 0.731,
+    "a_text": "The automated LLM judge classified **36 of the 41 evaluable generated bullets as supported**【1†L1-L2】【6†L1-L2】.",
+    "a_ver": {
+      "supported": 1,
+      "total": 1
+    },
+    "d_kind": "grounded",
+    "d_text": "The automated LLM judge classified 36 of the 41 evaluable generated bullets as supported [1][2].",
+    "d_ver": {
+      "supported": 1,
+      "total": 1
+    },
+    "a_correct": true,
+    "d_correct": true
+  },
+  "What is the purpose of the Ragas framework in the context of Retrieval Augmented Generation?": {
+    "answerable": true,
+    "top_score": 0.731,
+    "a_text": "The Ragas framework is designed to **automatically evaluate Retrieval‑Augmented Generation pipelines without needing reference answers**. It supplies a suite of reference‑free metrics that measure how well the retriever selects relevant passages, how faithfully the LLM uses those passages, and the overall quality of the generated output, thereby enabling faster, annotation‑free assessment of RAG systems【2†L1-L5】【6†L1-L5】.",
+    "a_ver": {
+      "supported": 1,
+      "total": 2
+    },
+    "d_kind": "grounded",
+    "d_text": "- Ragas is a framework for reference‑free, automated evaluation of Retrieval‑Augmented Generation pipelines【2】.  \n- It measures multiple dimensions: how well the retriever finds relevant passages, how faithfully the LLM uses those passages, and the overall quality of the generated output【2】.  \n- The framework supplies a suite of metrics that do not require ground‑truth human annotations, allowing faster evaluation cycles for RAG systems【2】.  \n- Ragas integrates with popular RAG toolkits such as llama‑index and Langchain, making it easy for developers to incorporate the evaluation into their workflows【6】.",
+    "d_ver": {
+      "supported": 2,
+      "total": 4
+    },
+    "a_correct": true,
+    "d_correct": true
+  },
+  "Which evaluation challenge for Retrieval Augmented Generation does Ragas address without using ground‑truth human annotations?": {
+    "answerable": true,
+    "top_score": 0.731,
+    "a_text": "Ragas tackles the problem of **reference‑free evaluation of RAG pipelines**—providing metrics for retrieval relevance, faithful use of the retrieved passages, and overall generation quality without needing any ground‑truth human‑annotated answers [2][4].",
+    "a_ver": {
+      "supported": 0,
+      "total": 1
+    },
+    "d_kind": "grounded",
+    "d_text": "Ragas tackles the need for reference‑free evaluation of RAG pipelines, providing metrics that assess retrieval relevance, passage usefulness, and generation faithfulness without requiring ground‑truth human annotations【1】. It enables automated assessment of correctness proxies and retrieval quality when reference answers are unavailable【2】.",
+    "d_ver": {
+      "supported": 1,
+      "total": 2
+    },
+    "a_correct": true,
+    "d_correct": true
+  },
+  "What limitation of current Large Language Models does context-aware cognitive augmentation aim to overcome?": {
+    "answerable": true,
+    "top_score": 0.73,
+    "a_text": "Current Large Language Models are largely **reactive and context‑agnostic**, delivering generic, one‑size‑fits‑all answers without adapting to a user’s cognitive state, task environment, or real‑time needs. Context‑aware cognitive augmentation seeks to overcome this limitation by giving LLMs real‑time contextual awareness and proactive, personalized support. [1][5]",
+    "a_ver": {
+      "supported": 2,
+      "total": 2
+    },
+    "d_kind": "grounded",
+    "d_text": "Current Large Language Models are largely reactive; they do not dynamically adapt to users’ cognitive states, task contexts, or real‑time needs, limiting their applicability in real‑world, interactive settings [1][2].",
+    "d_ver": {
+      "supported": 1,
+      "total": 2
+    },
+    "a_correct": true,
+    "d_correct": true
+  },
+  "In the think-aloud exhibition study, what cognitive challenges were identified when individuals interact with multi-modal information?": {
+    "answerable": true,
+    "top_score": 0.731,
+    "a_text": "The study found that interacting with text, video, VR, gestures and other media creates a **high‑cognitive‑load environment** that taxes users’ limited working‑memory and attention. Participants had to **selectively focus on key points while filtering distractions**, often under time pressure, and they struggled to **organize and retrieve the multimodal artifacts they captured** (photos, notes, recordings). Their personal notes were usually **subjective and unstructured**, making later recall difficult, and they needed support to **structure, summarize and retrieve information** across modalities【2†L1-L4】【3†L1-L4】【4†L1-L4】.",
+    "a_ver": {
+      "supported": 1,
+      "total": 3
+    },
+    "d_kind": "grounded",
+    "d_text": "- Difficulty structuring contextual information from multi‑modal sources【2】.  \n- Trouble retrieving relevant knowledge when needed【2】.  \n- Challenges leveraging digital tools for context‑aware, structured, and proactive engagement【2】.  \n- General problems in organizing, retrieving, and applying knowledge during the think‑aloud exhibition task【1】.",
+    "d_ver": {
+      "supported": 0,
+      "total": 4
+    },
+    "a_correct": true,
+    "d_correct": true
+  },
+  "What optimization technique does CARROT employ to find the optimal chunk combination order for retrieval-augmented generation?": {
+    "answerable": true,
+    "top_score": 0.731,
+    "a_text": "CARROT searches for the best ordering of retrieved chunks by using a **Monte Carlo Tree Search (MCTS)**‑based policy‑tree optimization. This MCTS strategy evaluates different chunk‑combination paths and selects the order that maximizes utility under the cost constraint【1†L2-L4】【2†L4-L7】【3†L1-L4】.",
+    "a_ver": {
+      "supported": 1,
+      "total": 2
+    },
+    "d_kind": "grounded",
+    "d_text": "CARROT uses a Monte Carlo Tree Search (MCTS) based strategy to search for the optimal chunk‑combination order within the cost constraint【2】【1】",
+    "d_ver": {
+      "supported": 1,
+      "total": 1
+    },
+    "a_correct": true,
+    "d_correct": true
+  },
+  "According to experimental results, how much performance improvement does CARROT achieve over baseline models?": {
+    "answerable": true,
+    "top_score": 0.719,
+    "a_text": "Experimental results show that CARROT delivers a sizable gain over the baseline retrieval methods.  \n* On the single‑hop WikiPassageQA benchmark, CARROT’s Rouge‑1 score is about **0.10–0.11 points higher** than the best non‑CARROT baseline (e.g., 0.432 vs. 0.328 for Llama‑3‑8B, 0.459 vs. 0.348 for DeepseekV3, 0.449 vs. 0.341 for GPT‑4o)【4†L1-L9】.  \n* On the multi‑hop HotpotQA benchmark, CARROT’s F1 score improves by roughly **0.07–0.08 points** over the strongest baseline (e.g., 0.320 vs. 0.248 for Llama‑3‑8B, 0.341 vs. 0.263 for DeepseekV3, 0.331 vs. 0.259 for GPT‑4o)【4†L13-L21】.  \n\nThus, CARROT consistently yields **7–11 absolute points** of performance improvement across datasets and LLMs compared with prior baseline models.",
+    "a_ver": {
+      "supported": 1,
+      "total": 4
+    },
+    "d_kind": "grounded",
+    "d_text": "CARROT yields roughly a 30 % performance gain over baseline models, as shown by the experimental results. [1][2]",
+    "d_ver": {
+      "supported": 1,
+      "total": 1
+    },
+    "a_correct": false,
+    "d_correct": true
+  },
+  "What are the exact EM and F1 improvements reported for IGMiRAG compared to the state-of-the-art baseline?": {
+    "answerable": true,
+    "top_score": 0.73,
+    "a_text": "IGMiRAG beats the previous best RAG system by 4.4 percentage points in exact‑match (EM) on MuSiQue and 12.2 points on 2WikiMultiHop, and by 4.7 points in F1 on MuSiQue and 13.4 points on 2WikiMultiHop [2].",
+    "a_ver": {
+      "supported": 0,
+      "total": 1
+    },
+    "d_kind": "grounded",
+    "d_text": "IGMiRAG improves Exact Match by 4.8 percentage points and F1 by 5.0 percentage points over the state‑of‑the‑art baseline [1].",
+    "d_ver": {
+      "supported": 1,
+      "total": 1
+    },
+    "a_correct": false,
+    "d_correct": true
+  },
+  "How does IGMiRAG adjust mining depth and memory window when processing a query?": {
+    "answerable": true,
+    "top_score": 0.718,
+    "a_text": "IGMiRAG first parses the query to extract an “intuitive” strategy, then uses that signal to drive a **depth‑adaptive retrieval** process.  A depth‑amplification coefficient together with an “initial‑expansion” fusion step scales both the number of reasoning iterations (the mining depth) and the size of the retrieved context window on‑the‑fly.  For harder queries the system allocates more depth‑3 chunks, while for easier ones it keeps the depth shallow, and the amplification coefficients (e.g., ku = 5, kc = 2) adjust the window size to balance token cost and relevance [1][3][6].",
+    "a_ver": {
+      "supported": 1,
+      "total": 3
+    },
+    "d_kind": "grounded",
+    "d_text": "- IGMiRAG first parses the query with a Retrieval‑Strategy Parser to extract intuitive strategies.  \n- These strategies are used to decide how deep the deductive pathways should be mined (mining depth) and how large a segment of memory to consider (memory window).  \n- The parser therefore dynamically controls both depth and window size, guiding the allocation of retrieval resources for each query. [1][2]",
+    "d_ver": {
+      "supported": 0,
+      "total": 3
+    },
+    "a_correct": true,
+    "d_correct": true
+  },
+  "What improvement in MRR@10 does Direct Document Relevance Optimization (DDRO) achieve on the MS MARCO document benchmark?": {
+    "answerable": true,
+    "top_score": 0.731,
+    "a_text": "Direct Document Relevance Optimization (DDRO) raises the MRR@10 on the MS MARCO document‑ranking benchmark by about **23.6 %** compared with the strongest baseline (ROGER‑Ultron (TU))【3†L13-L16】.",
+    "a_ver": {
+      "supported": 0,
+      "total": 1
+    },
+    "d_kind": "grounded",
+    "d_text": "DDRO improves MRR@10 on the MS MARCO document benchmark by about 7.4% [1]",
+    "d_ver": {
+      "supported": 1,
+      "total": 1
+    },
+    "a_correct": false,
+    "d_correct": true
+  },
+  "How does Direct Document Relevance Optimization (DDRO) differ from reinforcement learning-based methods such as Reinforcement Learning from Relevance Feedback (RLRF) in its optimization strategy?": {
+    "answerable": true,
+    "top_score": 0.728,
+    "a_text": "Direct Document Relevance Optimization (DDRO) replaces the reinforcement‑learning loop used by RLRF with a two‑stage, supervised pipeline. First DDRO fine‑tunes a language model to generate docids that are likely relevant (supervised fine‑tuning), and then it refines the model with a pairwise‑ranking objective that directly teaches the model to separate relevant from irrelevant docids [2]. This eliminates the need for an auxiliary reward model and the costly, often unstable reinforcement‑learning fine‑tuning that RLRF requires [5][4]. In contrast, RLRF aligns docid generation with relevance judgments by defining a reward function and optimizing it via reinforcement learning, which adds significant computational complexity and instability [5].",
+    "a_ver": {
+      "supported": 1,
+      "total": 4
+    },
+    "d_kind": "grounded",
+    "d_text": "- DDRO directly optimizes GenIR models with a pairwise ranking objective, aligning token‑level docid generation to document‑level relevance without any reward model or reinforcement step [2].  \n- Reinforcement learning‑based methods such as RLRF first train an auxiliary reward function and then fine‑tune the model with reinforcement learning, adding extra complexity and instability [2].  \n- DDRO therefore removes the need for explicit reward modeling and the costly RL fine‑tuning stage, offering a simpler and more stable optimization pipeline [2].  \n- In contrast, RLRF relies on reinforcement learning from relevance feedback, which introduces computational overhead and potential instability due to the reward‑driven training process [2].",
+    "d_ver": {
+      "supported": 2,
+      "total": 4
+    },
+    "a_correct": true,
+    "d_correct": true
+  },
+  "What is the purpose of MusT‑RAG in music question answering?": {
+    "answerable": true,
+    "top_score": 0.73,
+    "a_text": "MusT‑RAG is a retrieval‑augmented framework that equips general‑purpose large language models with a music‑specific knowledge source so they can answer text‑only music questions more accurately. By retrieving relevant passages from the curated MusWikiDB and feeding them into the generator (both at inference and during fine‑tuning), MusT‑RAG adapts LLMs to the music domain, mitigates factuality gaps, and boosts performance on both in‑domain and out‑of‑domain music QA tasks【4†L1-L5】【5†L1-L5】.",
+    "a_ver": {
+      "supported": 1,
+      "total": 2
+    },
+    "d_kind": "grounded",
+    "d_text": "- MusT‑RAG augments general‑purpose LLMs with a retrieval step that fetches music‑specific information from a curated vector database (MusWikiDB) to answer music‑related questions【1†L1-L4】【2†L1-L4】.  \n- By supplying this external context, the framework tackles the music domain‑adaptation problem and improves the model’s ability to generate coherent, relevant answers【1†L1-L3】.  \n- It supports both inference and fine‑tuning stages, showing better contextual understanding than conventional fine‑tuning alone【1†L3-L4】【2†L9-L11】.",
+    "d_ver": {
+      "supported": 2,
+      "total": 3
+    },
+    "a_correct": true,
+    "d_correct": true
+  },
+  "How does MusWikiDB compare to a general Wikipedia corpus when used in the MusT‑RAG framework?": {
+    "answerable": true,
+    "top_score": 0.729,
+    "a_text": "MusWikiDB is a compact, music‑focused vector store (≈31 K pages, 629 K passages, 65.5 M tokens) compared with the full Wikipedia corpus (≈3.2 M pages, 21 M passages, 2.1 B tokens) [1]. When plugged into the MusT‑RAG framework it not only speeds up retrieval—about 10 times faster than using Wikipedia—but also improves answer quality, delivering roughly 5‑6 % higher performance on music‑question‑answering tasks [4][5].",
+    "a_ver": {
+      "supported": 1,
+      "total": 2
+    },
+    "d_kind": "grounded",
+    "d_text": "- MusWikiDB contains far fewer pages (31 K) than the full Wikipedia corpus (3.2 M) and has a much smaller vocabulary (786 K vs 21.5 M) while focusing exclusively on music‑related text [1].  \n- Because it is music‑specialized, MusWikiDB provides more relevant passages for music questions, leading to higher answer accuracy and lower computational cost in the MusT‑RAG framework compared with using the general Wikipedia corpus [2].",
+    "d_ver": {
+      "supported": 1,
+      "total": 2
+    },
+    "a_correct": true,
+    "d_correct": true
+  },
+  "What is the name of the membership inference technique introduced for targeting documents in a Retrieval-Augmented Generation datastore?": {
+    "answerable": true,
+    "top_score": 0.731,
+    "a_text": "The technique is called the **Interrogation Attack (IA)** — a membership‑inference method that targets documents stored in a Retrieval‑Augmented Generation datastore【2†L1-L4】【1†L1-L3】.",
+    "a_ver": {
+      "supported": 2,
+      "total": 2
+    },
+    "d_kind": "grounded",
+    "d_text": "The technique is called **Interrogation Attack (IA)**【1】【2】",
+    "d_ver": {
+      "supported": 0,
+      "total": 1
+    },
+    "a_correct": true,
+    "d_correct": true
+  },
+  "How many natural-text queries does the Interrogation Attack need to successfully infer document membership while remaining stealthy?": {
+    "answerable": true,
+    "top_score": 0.731,
+    "a_text": "The Interrogation Attack can infer a document’s membership with only about 30 natural‑text queries while staying undetectable [1][2].",
+    "a_ver": {
+      "supported": 1,
+      "total": 1
+    },
+    "d_kind": "grounded",
+    "d_text": "The Interrogation Attack needs only about 30 natural‑text queries to infer document membership while staying stealthy【1】【2】",
+    "d_ver": {
+      "supported": 1,
+      "total": 1
+    },
+    "a_correct": true,
+    "d_correct": true
+  },
+  "What is the role of the Landmark Knowledge Agent in the LLandMark framework?": {
+    "answerable": true,
+    "top_score": 0.729,
+    "a_text": "The Landmark Knowledge Agent is responsible for “knowledge enhancement.” When a landmark is detected in the user query, the agent looks up a curated Vietnamese‑landmark knowledge base and replaces the plain name with a rich visual description (e.g., “St. Joseph’s Cathedral” → “Twin square bell towers, dark gray stone, Gothic architecture, neo‑Gothic façade”). This enriched description is inserted into the SearchPlan so that the downstream CLIP‑based semantic search can match the visual appearance of the landmark rather than just its lexical label, thereby bridging the semantic gap and improving retrieval accuracy【3†L1-L7】【1†L9-L13】.",
+    "a_ver": {
+      "supported": 2,
+      "total": 3
+    },
+    "d_kind": "grounded",
+    "d_text": "- The Landmark Knowledge Agent detects cultural or spatial landmarks in a query.  \n- It reformulates those landmarks into descriptive visual prompts.  \n- These prompts are used to enhance CLIP‑based semantic matching for Vietnamese scenes, improving retrieval precision. [2]",
+    "d_ver": {
+      "supported": 2,
+      "total": 3
+    },
+    "a_correct": true,
+    "d_correct": true
+  },
+  "How does the LLM-assisted image-to-image pipeline in LLandMark eliminate the need for manual image input?": {
+    "answerable": true,
+    "top_score": 0.731,
+    "a_text": "The pipeline first lets the LLM‑agent spot any landmark mentioned in the user’s text and automatically turn that name into a descriptive search query (e.g., “The Imperial City of Hue from above”). That query is sent to the Google Custom Search API, which returns a small set of real‑world reference images. Those retrieved images are then encoded with CLIP and used as visual queries for similarity matching against the video keyframe embeddings. Because the system generates and fetches the reference images itself, users never have to upload or select an image manually【2†L2-L5】【4†L1-L4】.",
+    "a_ver": {
+      "supported": 1,
+      "total": 4
+    },
+    "d_kind": "grounded",
+    "d_text": "- The LLM (Gemini 2.5 Flash) automatically detects landmark names in the query.  \n- It then generates descriptive visual prompts that are sent to a web‑image search API, retrieving representative landmark images without any user‑provided picture.  \n- These retrieved images are encoded with a CLIP image encoder and matched against stored key‑frame embeddings to find visually similar candidates.  \n- Because the LLM creates the query, fetches the reference images, and performs the similarity search, users no longer need to supply a manual input image. [1][2]",
+    "d_ver": {
+      "supported": 2,
+      "total": 4
+    },
+    "a_correct": true,
+    "d_correct": true
+  },
+  "What level of execution accuracy improvement does EVOR achieve over methods such as Reflexion and DocPrompting?": {
+    "answerable": true,
+    "top_score": 0.728,
+    "a_text": "EVOR raises the execution‑accuracy (pass@1) by roughly **16 percentage points** compared with the best prior retrieval baseline, DocPrompting (16.1 % with ChatGPT and 16.2 % with CodeLlama)【1】.  By contrast, methods such as Reflexion (as well as MPSC and ExeDec) only improve over a vanilla generator by less than 2 % on average and even achieve 0 % accuracy on some tasks【1】.  Thus EVOR’s gain over Reflexion is on the order of a **mid‑teens‑percent** absolute increase.",
+    "a_ver": {
+      "supported": 1,
+      "total": 3
+    },
+    "d_kind": "grounded",
+    "d_text": "EVOR boosts execution accuracy by roughly 2 × to 4 × the level achieved by prior methods such as Reflexion and DocPrompting【1】.",
+    "d_ver": {
+      "supported": 0,
+      "total": 1
+    },
+    "a_correct": false,
+    "d_correct": true
+  },
+  "What is the name of the benchmark consisting of four new datasets for evaluating retrieval-augmented code generation introduced in the study?": {
+    "answerable": true,
+    "top_score": 0.557,
+    "a_text": "The study introduces a benchmark called **DeepCodeSeek**, which comprises four newly created datasets for evaluating retrieval‑augmented code generation【3】.",
+    "a_ver": {
+      "supported": 0,
+      "total": 1
+    },
+    "d_kind": "grounded",
+    "d_text": "The benchmark is called **EVOR‑BENCH**【1†L1-L3】【2†L1-L4】",
+    "d_ver": {
+      "supported": 0,
+      "total": 1
+    },
+    "a_correct": false,
+    "d_correct": true
+  },
+  "What is InF-IR and what type of training data does it provide for instruction-following retrieval models?": {
+    "answerable": true,
+    "top_score": 0.731,
+    "a_text": "InF‑IR is a large‑scale, high‑quality training corpus created specifically for instruction‑following information‑retrieval models.  It converts ordinary <query, passage> pairs (e.g., from MS MARCO) into expressive <instruction, query, passage> triples and supplies both positive examples (≈30 K triples) and rigorously constructed hard‑negative triples (≈60 K) for instruction‑aware contrastive learning【3†L1-L4】【4†L1-L4】【6†L1-L4】.",
+    "a_ver": {
+      "supported": 2,
+      "total": 2
+    },
+    "d_kind": "grounded",
+    "d_text": "- InF‑IR is an instruction‑following IR data‑synthesis pipeline that builds a large‑scale training corpus for retrieval models [1][2].  \n- It generates high‑quality positive‑negative triplets by jointly contrasting instructions, queries, and documents, creating challenging negative examples [1].  \n- The corpus transforms ordinary <query, passage> pairs into expressive <instruction, query, passage> triples, explicitly modeling complex instruction‑query‑document interactions for instruction‑aware contrastive learning [2].",
+    "d_ver": {
+      "supported": 2,
+      "total": 3
+    },
+    "a_correct": false,
+    "d_correct": false
+  },
+  "By how much does InF-Embed increase p‑MRR on instruction‑based retrieval benchmarks compared to competitive baselines?": {
+    "answerable": true,
+    "top_score": 0.718,
+    "a_text": "InF‑Embed lifts the pairwise‑MRR metric by roughly 9 points for embedding‑based retrievers and by about 4.2 points for auto‑regressive language‑model retrievers when measured against strong competitive baselines [6].",
+    "a_ver": {
+      "supported": 0,
+      "total": 1
+    },
+    "d_kind": "grounded",
+    "d_text": "- InF‑Embed raises p‑MRR by **+9.0** points on embedding‑based retrieval models.  \n- It also improves p‑MRR by **+4.2** points on auto‑regressive language‑model retrieval.  \n\n[1][2]",
+    "d_ver": {
+      "supported": 0,
+      "total": 2
+    },
+    "a_correct": false,
+    "d_correct": false
+  },
+  "What impact do intent-preserving lexical variations (e.g., typos) have on the planning signal of Planning Ahead in Generative Retrieval (PAG)?": {
+    "answerable": true,
+    "top_score": 0.731,
+    "a_text": "Intent‑preserving lexical changes such as misspellings or synonym swaps destabilize PAG’s planner.  Small edits fragment the SentencePiece tokens, which prevents the sparse lexical triggers that the planner relies on.  As a result the planner’s top‑\\(n\\) candidate set and its highest‑weight tokens shift dramatically (“plan drift”), the overlap with the original candidate pool drops (e.g., CandOverlap ≈ 0.35 vs ≈ 0.80 for re‑ordering) and the look‑ahead bonus becomes far less informative or even collapses.  This reduced coverage of relevant doc‑id prefixes leads to weaker end‑to‑end ranking performance, effectively reverting decoding toward an unguided, lower‑quality search.  [1][2][3]",
+    "a_ver": {
+      "supported": 4,
+      "total": 4
+    },
+    "d_kind": "grounded",
+    "d_text": "- Intent‑preserving lexical changes such as misspellings or synonym swaps shift the planner’s top‑n candidate set and high‑weight planner tokens. [2]  \n- This “plan‑drift” reduces candidate coverage and weakens the final ranking performance. [2]  \n- The planning signal becomes less informative and can collapse, causing the look‑ahead bonus to provide little guidance and reverting decoding toward weaker unguided search. [1][2]",
+    "d_ver": {
+      "supported": 2,
+      "total": 3
+    },
+    "a_correct": true,
+    "d_correct": true
+  },
+  "Which query-side mitigation strategy most effectively recovers performance for non‑English mMARCO queries against an English index when using Planning Ahead in Generative Retrieval (PAG)?": {
+    "answerable": true,
+    "top_score": 0.731,
+    "a_text": "Query translation — translating non‑English queries into English at inference time before applying the unchanged English PAG pipeline — yields the strongest recovery of performance for non‑English mMARCO queries against a fixed English index【1†L1-L4】【4†L1-L4】.",
+    "a_ver": {
+      "supported": 1,
+      "total": 2
+    },
+    "d_kind": "grounded",
+    "d_text": "Query translation is the most effective query‑side mitigation, providing the strongest recovery for non‑English mMARCO queries against an English index when using PAG [1].",
+    "d_ver": {
+      "supported": 1,
+      "total": 1
+    },
+    "a_correct": true,
+    "d_correct": true
+  },
+  "What is the primary function of the wearable system named Factually?": {
+    "answerable": true,
+    "top_score": 0.727,
+    "a_text": "Factually is a wearable, real‑time fact‑checking system that monitors spoken statements and, when it detects a potentially false claim, discreetly alerts the user with a vibrotactile cue so they can verify and correct the information. [1][2]",
+    "a_ver": {
+      "supported": 1,
+      "total": 1
+    },
+    "d_kind": "grounded",
+    "d_text": "- Factually is a wearable live‑fact‑checking system that helps users discern truth in real time【1】.  \n- It integrates with smartwatches or rings and gives discreet vibration alerts when potentially false information is detected【2】.",
+    "d_ver": {
+      "supported": 2,
+      "total": 2
+    },
+    "a_correct": true,
+    "d_correct": true
+  },
+  "Which three capabilities does the proposed voice-based learning companion aim to deliver?": {
+    "answerable": true,
+    "top_score": 0.502,
+    "a_text": "The companion is designed to (1) retrieve relevant multimodal content (images, audio, video) using a ColBERT‑style embedding engine, (2) generate natural‑language answers from any input modality, and (3) synthesize spoken responses via a talker‑vocoder pipeline — the three inference modes of the model [1].",
+    "a_ver": {
+      "supported": 1,
+      "total": 2
+    },
+    "d_kind": "grounded",
+    "d_text": "- Enable users to discover new knowledge on‑the‑go via contextual interactive quizzes that foster critical thinking and mindfulness【1】.  \n- Proactively detect misinformation, allowing users to assess information critically in real time【1】.  \n- Provide spoken language correction and prompting hints to support second‑language learning and effective communication【1】.",
+    "d_ver": {
+      "supported": 3,
+      "total": 3
+    },
+    "a_correct": false,
+    "d_correct": true
+  },
+  "What limitation of traditional machine‑learning ranking approaches do neural ranking models aim to overcome?": {
+    "answerable": true,
+    "top_score": 0.729,
+    "a_text": "Neural ranking models are designed to get rid of the reliance on hand‑crafted, domain‑specific features that traditional learning‑to‑rank methods require.  Hand‑crafted features are costly to define, extract and validate for each new task, so neural models learn representations directly from raw text instead【2†L1-L5】【4†L1-L4】.",
+    "a_ver": {
+      "supported": 0,
+      "total": 2
+    },
+    "d_kind": "grounded",
+    "d_text": "Traditional ranking approaches rely on hand‑crafted, domain‑specific features that are costly to define, extract, and validate [2].  \nNeural ranking models aim to remove this limitation by learning representations directly from raw text, eliminating the need for hand‑crafted features [1][2].",
+    "d_ver": {
+      "supported": 1,
+      "total": 2
+    },
+    "a_correct": true,
+    "d_correct": true
+  },
+  "Besides documents, what other types of items are mentioned as analogous retrieval tasks for neural ranking models?": {
+    "answerable": true,
+    "top_score": 0.729,
+    "a_text": "Neural ranking models can be applied to retrieval tasks that rank items other than plain text documents, such as structured‑document (e.g., HTML, XML, tables) retrieval, question‑answering (retrieving answer passages), image retrieval, and ad‑hoc video search [1][2].",
+    "a_ver": {
+      "supported": 0,
+      "total": 1
+    },
+    "d_kind": "grounded",
+    "d_text": "- Structured documents (e.g., HTML, XML, tables) [1]  \n- Question‑Answering items [1]  \n- Images [1]  \n- Ad‑hoc video content [1]  \n\nThese four tasks are presented as analogues to document retrieval for neural ranking models [2]",
+    "d_ver": {
+      "supported": 0,
+      "total": 2
+    },
+    "a_correct": true,
+    "d_correct": true
+  },
+  "What limitations of training-based indexing in generative retrieval does Few-Shot GR aim to address?": {
+    "answerable": true,
+    "top_score": 0.73,
+    "a_text": "Few‑Shot GR is designed to overcome three main drawbacks of the usual training‑based indexing used in generative retrieval:  \n\n1. **High training overhead** – training‑based indexing requires large numbers of query‑docid pairs, extensive time and many GPUs to fine‑tune a model [4][5].  \n2. **Inefficient use of LLM pre‑trained knowledge** – fine‑tuning forces the model to learn a new query‑docid mapping objective, causing it to forget much of the knowledge acquired during pre‑training [4][5].  \n3. **Poor adaptability to dynamic corpora** – because the index is learned, adding or removing documents often leads to catastrophic forgetting of earlier documents [2].  \n\nFew‑Shot GR addresses all three by indexing with prompting only, preserving the LLM’s original knowledge and allowing easy updates to the docid bank.",
+    "a_ver": {
+      "supported": 0,
+      "total": 7
+    },
+    "d_kind": "grounded",
+    "d_text": "- Training‑based indexing requires costly fine‑tuning of large models, demanding many query–docid pairs, extensive time and GPU resources【2】.  \n- The fine‑tuning process can cause the model to forget its pre‑trained knowledge because the objective (query‑to‑docid mapping) differs from the original text‑generation pre‑training【2】.  \n- It under‑utilises the rich pre‑trained knowledge already present in LLMs【1】.  \n- The approach is poorly adaptable to changing or dynamic document collections, limiting its flexibility【1】.",
+    "d_ver": {
+      "supported": 2,
+      "total": 4
+    },
+    "a_correct": true,
+    "d_correct": true
+  },
+  "How does Few-Shot GR use docids during the indexing and retrieval processes?": {
+    "answerable": true,
+    "top_score": 0.731,
+    "a_text": "Few‑Shot GR first builds a **docid bank** by prompting an LLM to create a free‑text identifier for each document.  In the few‑shot indexing stage the model is given a few examples and asked to generate a docid for every corpus item; the authors extend this to a **one‑to‑many mapping**, i.e., multiple docids are generated for the same document so that different queries can point to it [2][3][4].  \n\nAt **retrieval time** the same LLM receives the user query and, using constrained beam search, is forced to output a token sequence that matches one of the pre‑generated docids in the bank [1].  The generated docid is then looked up in the bank and mapped back to its corresponding document [2][3].",
+    "a_ver": {
+      "supported": 1,
+      "total": 5
+    },
+    "d_kind": "grounded",
+    "d_text": "- During indexing, Few‑Shot GR first creates pseudo‑queries for each document and prompts an LLM to generate several free‑text identifiers (docids) for each pseudo‑query, producing a set of n docids per document. All generated docids are collected into a docid bank B, and duplicate identifiers are removed [2].  \n\n- In the retrieval phase, the same LLM receives the user query and is constrained (e.g., via constrained beam search) to output a docid that belongs to the previously built docid bank. The generated docid is then mapped back to its corresponding document for the final answer [1].",
+    "d_ver": {
+      "supported": 2,
+      "total": 4
+    },
+    "a_correct": true,
+    "d_correct": true
+  },
+  "What kind of targets can Instant Motion Tracking robustly track?": {
+    "answerable": true,
+    "top_score": 0.705,
+    "a_text": "Instant Motion Tracking can robustly track **planar targets** – e.g., QR codes, AR markers, and other image/texture targets (typically rectangular‑shaped) – by estimating a homography for the target’s four corners across frames【4†L1-L5】. The system’s planar‑target module is designed for high‑accuracy, resilient tracking of such surfaces【4†L6-L9】.",
+    "a_ver": {
+      "supported": 2,
+      "total": 4
+    },
+    "d_kind": "grounded",
+    "d_text": "- It can robustly track planar targets [1][3].  \n- It also supports relative‑scale 6‑DoF tracking of objects [1][3].",
+    "d_ver": {
+      "supported": 1,
+      "total": 2
+    },
+    "a_correct": true,
+    "d_correct": false
+  },
+  "Does Instant Motion Tracking require calibration to achieve relative‑scale 6DoF tracking?": {
+    "answerable": true,
+    "top_score": 0.731,
+    "a_text": "No. The Instant Motion Tracking system achieves relative‑scale 6DoF tracking without any calibration – it is described as a calibration‑free approach that works on any device with a gyroscope【2†L1-L3】【4†L4-L7】.",
+    "a_ver": {
+      "supported": 1,
+      "total": 2
+    },
+    "d_kind": "grounded",
+    "d_text": "No. The system achieves relative‑scale 6DoF tracking without any calibration [1][2].",
+    "d_ver": {
+      "supported": 1,
+      "total": 1
+    },
+    "a_correct": true,
+    "d_correct": true
+  },
+  "What is the name of the retrieval-augmented system designed to preserve expert knowledge in the energy sector?": {
+    "answerable": true,
+    "top_score": 0.73,
+    "a_text": "The retrieval‑augmented system is called **Expert Mind**【2†L1-L4】【3†L1-L4】.",
+    "a_ver": {
+      "supported": 1,
+      "total": 1
+    },
+    "d_kind": "grounded",
+    "d_text": "The system is called **Expert Mind**【1】.",
+    "d_ver": {
+      "supported": 0,
+      "total": 1
+    },
+    "a_correct": true,
+    "d_correct": true
+  },
+  "Which technologies does Expert Mind combine to capture and make organizational expertise queryable?": {
+    "answerable": true,
+    "top_score": 0.731,
+    "a_text": "Expert Mind fuses a multimodal knowledge‑capture pipeline (structured interviews, think‑aloud sessions and ingestion of existing text artifacts) with large‑language‑model‑driven processing and a vector‑store‑based semantic retrieval layer, all wrapped in a Retrieval‑Augmented Generation (RAG) architecture that powers a conversational query interface【5†L1-L4】【4†L1-L4】.",
+    "a_ver": {
+      "supported": 1,
+      "total": 1
+    },
+    "d_kind": "grounded",
+    "d_text": "- Uses Retrieval‑Augmented Generation (RAG) to link external knowledge stores with generation. [1][2]  \n- Employs large language models (LLMs) for natural‑language understanding and response generation. [1][2]  \n- Captures expertise via multimodal techniques: structured interviews, think‑aloud sessions, and text‑corpus ingestion. [1][2]  \n- Stores captured content as embeddings in a vector store for fast similarity search. [1]  \n- Provides a conversational interface that queries the vector store and generates answers. [1]",
+    "d_ver": {
+      "supported": 3,
+      "total": 5
+    },
+    "a_correct": true,
+    "d_correct": true
+  },
+  "Who is Virat Kohli?": {
+    "answerable": false,
+    "top_score": 0.5,
+    "a_text": "The provided sources do not contain any information about Virat Kohli, so his identity cannot be answered from the given passages.",
+    "a_ver": {
+      "supported": 0,
+      "total": 1
+    },
+    "d_kind": "none",
+    "d_text": "Insufficient evidence in the indexed papers to answer this question.",
+    "d_ver": null,
+    "a_declined": true
+  },
+  "What is the capital of France?": {
+    "answerable": false,
+    "top_score": 0.508,
+    "a_text": "Paris is the capital of France【1】.",
+    "a_ver": {
+      "supported": 1,
+      "total": 1
+    },
+    "d_kind": "none",
+    "d_text": "Insufficient evidence in the indexed papers to answer this question.",
+    "d_ver": null,
+    "a_declined": false
+  },
+  "Who won the 2018 football world cup?": {
+    "answerable": false,
+    "top_score": 0.73,
+    "a_text": "The supplied passages do not contain any information about the winner of the 2018 football World Cup, so I cannot answer the question from the given sources.",
+    "a_ver": {
+      "supported": 1,
+      "total": 1
+    },
+    "d_kind": "none",
+    "d_text": "Insufficient evidence in the indexed papers to answer this question.",
+    "d_ver": null,
+    "a_declined": true
+  },
+  "How do I cook biryani?": {
+    "answerable": false,
+    "top_score": 0.5,
+    "a_text": "I’m sorry, but none of the supplied passages contain information about cooking biryani, so I can’t provide an answer based on the given sources.",
+    "a_ver": {
+      "supported": 0,
+      "total": 1
+    },
+    "d_kind": "none",
+    "d_text": "Insufficient evidence in the indexed papers to answer this question.",
+    "d_ver": null,
+    "a_declined": true
+  },
+  "What is the price of Bitcoin today?": {
+    "answerable": false,
+    "top_score": 0.504,
+    "a_text": "I’m sorry, but none of the provided sources contain information about the current price of Bitcoin, so I can’t answer that question from the given material.",
+    "a_ver": {
+      "supported": 0,
+      "total": 1
+    },
+    "d_kind": "none",
+    "d_text": "Insufficient evidence in the indexed papers to answer this question.",
+    "d_ver": null,
+    "a_declined": true
+  },
+  "Explain the plot of the movie Titanic.": {
+    "answerable": false,
+    "top_score": 0.508,
+    "a_text": "The supplied passages do not contain any description of the storyline of the film *Titanic*; they discuss unrelated topics such as hypothesis testing, retrieval‑augmented generation, and a nonsensical “titanic anatomy” phrase that is not a plot summary. Consequently, there is no source‑based information here to explain the movie’s plot. [1]",
+    "a_ver": {
+      "supported": 0,
+      "total": 3
+    },
+    "d_kind": "none",
+    "d_text": "Insufficient evidence in the indexed papers to answer this question.",
+    "d_ver": null,
+    "a_declined": true
+  },
+  "What are the symptoms of diabetes?": {
+    "answerable": false,
+    "top_score": 0.503,
+    "a_text": "I don’t know.",
+    "a_ver": {
+      "supported": 0,
+      "total": 0
+    },
+    "d_kind": "none",
+    "d_text": "Insufficient evidence in the indexed papers to answer this question.",
+    "d_ver": null,
+    "a_declined": true
+  },
+  "Who is the prime minister of India?": {
+    "answerable": false,
+    "top_score": 0.572,
+    "a_text": "The supplied passages do not contain any information about who the prime minister of India is, so the answer cannot be derived from the given sources. [1][2][3][4][5]",
+    "a_ver": {
+      "supported": 0,
+      "total": 1
+    },
+    "d_kind": "none",
+    "d_text": "Insufficient evidence in the indexed papers to answer this question.",
+    "d_ver": null,
+    "a_declined": true
+  },
+  "How does photosynthesis work?": {
+    "answerable": false,
+    "top_score": 0.5,
+    "a_text": "I’m sorry, but none of the provided passages contain information about the biological process of photosynthesis, so I can’t answer that question based on the given sources.",
+    "a_ver": {
+      "supported": 0,
+      "total": 1
+    },
+    "d_kind": "none",
+    "d_text": "Insufficient evidence in the indexed papers to answer this question.",
+    "d_ver": null,
+    "a_declined": true
+  },
+  "What is the best programming language for game development?": {
+    "answerable": false,
+    "top_score": 0.512,
+    "a_text": "The provided passages do not discuss programming languages for game development, so they do not contain information to determine which language is best for that purpose. [1][2][3][4][5][6]",
+    "a_ver": {
+      "supported": 0,
+      "total": 1
+    },
+    "d_kind": "none",
+    "d_text": "Insufficient evidence in the indexed papers to answer this question.",
+    "d_ver": null,
+    "a_declined": true
+  }
+}

@@ -1,0 +1,188 @@
+[
+  {
+    "claim": "36 of the 41 evaluable generated bullets were classified as supported by the automated LLM judge.",
+    "label": true,
+    "old": 0.998,
+    "new": 0.998104831243324
+  },
+  {
+    "claim": "Ragas is a framework that automatically evaluates Retrieval‑Augmented Generation pipelines without needing reference answers.",
+    "label": true,
+    "old": 0.967,
+    "new": 0.96714294007628
+  },
+  {
+    "claim": "It supplies a suite of metrics to judge how well the retriever finds relevant passages, how faithfully the LLM uses them, and the overall quality of the generated output.",
+    "label": true,
+    "old": 0.995,
+    "new": 0.9952273530790297
+  },
+  {
+    "claim": "The framework targets fast, reference‑free assessment, offering proxies for correctness and passage usefulness, and integrates with common RAG toolkits such as llama‑index and Langchain.",
+    "label": true,
+    "old": 0.991,
+    "new": 0.9912285893334766
+  },
+  {
+    "claim": "Ragas tackles the need for reference‑free evaluation of RAG pipelines, providing metrics that assess retrieval relevance, passage usefulness, and generation faithfulness without requiring ground‑truth human annotations【1】.",
+    "label": true,
+    "old": 0.176,
+    "new": 0.1761321440552108
+  },
+  {
+    "claim": "It enables automated assessment of correctness proxies and retrieval quality when reference answers are unavailable【2】.",
+    "label": true,
+    "old": 0.97,
+    "new": 0.9701360160491596
+  },
+  {
+    "claim": "Current Large Language Models are largely reactive and lack real‑time contextual awareness of users’ cognitive states and task environments, limiting their applicability in real‑world, dynamic settings.",
+    "label": true,
+    "old": 0.828,
+    "new": 0.827658842289636
+  },
+  {
+    "claim": "Difficulty structuring contextual information from multi‑modal sources【2】.",
+    "label": true,
+    "old": 0.085,
+    "new": 0.08534483705514925
+  },
+  {
+    "claim": "Challenges leveraging digital tools for context‑aware, structured, and proactive engagement【2】.",
+    "label": true,
+    "old": 0.091,
+    "new": 0.09101858456502211
+  },
+  {
+    "claim": "General problems in organizing, retrieving, and applying knowledge during the think‑aloud exhibition task【1】.",
+    "label": true,
+    "old": 0.076,
+    "new": 0.07646897327085142
+  },
+  {
+    "claim": "CARROT uses a Monte Carlo Tree Search (MCTS) based strategy to search for the optimal chunk‑combination order within the cost constraint【2】.",
+    "label": true,
+    "old": 0.389,
+    "new": 0.389180559301831
+  },
+  {
+    "claim": "It applies MCTS to explore and select the best combination of chunks for retrieval‑augmented generation【1】.",
+    "label": true,
+    "old": 0.012,
+    "new": 0.012354874812338509
+  },
+  {
+    "claim": "CARROT yields roughly a 30 % performance gain over baseline models, as shown by the experimental results.",
+    "label": true,
+    "old": 0.915,
+    "new": 0.9153848037447241
+  },
+  {
+    "claim": "IGMiRAG improves over the state‑of‑the‑art baseline by 4.8 % in Exact Match (EM) and 5.0 % in F1 overall【1】.",
+    "label": true,
+    "old": 0.013,
+    "new": 0.012806056989989224
+  },
+  {
+    "claim": "IGMiRAG first parses the query with a Retrieval‑Strategy Parser (question parser) that extracts intuitive strategies from the user’s question【1】.",
+    "label": true,
+    "old": 0.014,
+    "new": 0.014162228198819637
+  },
+  {
+    "claim": "The extracted strategies are used to set how many hops of deductive pathways to follow, thereby controlling the mining depth【2】.",
+    "label": false,
+    "old": 0.006,
+    "new": 0.006080003507646787
+  },
+  {
+    "claim": "The same strategies also define the size of the memory window that will be examined, limiting or expanding the set of memories retrieved for the query【1】.",
+    "label": true,
+    "old": 0.002,
+    "new": 0.001858040298375337
+  },
+  {
+    "claim": "This dynamic adjustment enables adaptive deep mining that matches the complexity of each query【2】.",
+    "label": true,
+    "old": 0.732,
+    "new": 0.7323982217215816
+  },
+  {
+    "claim": "DDRO improves MRR@10 on the MS MARCO document benchmark by 7.4%",
+    "label": true,
+    "old": 0.986,
+    "new": 0.9855701789535858
+  },
+  {
+    "claim": "DDRO directly optimizes GenIR models with pairwise ranking supervision, aligning token‑level docid generation to document‑level relevance without any reward model or reinforcement step.",
+    "label": true,
+    "old": 0.003,
+    "new": 0.0032659337645720913
+  },
+  {
+    "claim": "In contrast, RLRF relies on reinforcement learning: it first builds an auxiliary reward function from relevance feedback and then fine‑tunes the model with reinforcement learning, adding complexity and instability.",
+    "label": true,
+    "old": 0.994,
+    "new": 0.9943722738629927
+  },
+  {
+    "claim": "DDRO’s optimization is a single, supervised step, while RLRF requires a two‑stage process (reward modeling + RL) that is computationally expensive.",
+    "label": false,
+    "old": 0.06,
+    "new": 0.0599677254516344
+  },
+  {
+    "claim": "DDRO therefore eliminates the need for explicit reward modeling and reinforcement fine‑tuning, simplifying the training pipeline compared to RLRF.",
+    "label": true,
+    "old": 0.003,
+    "new": 0.0033066162868924318
+  },
+  {
+    "claim": "36 of the 85 evaluable generated bullets were classified as supported by the automated LLM judge.",
+    "label": false,
+    "old": 0.995,
+    "new": 0.9948856429025354
+  },
+  {
+    "claim": "Ragas is a framework that automatically evaluates Retrieval‑Augmented Generation pipelines with needing reference answers.",
+    "label": false,
+    "old": 0.02,
+    "new": 0.019921735940159703
+  },
+  {
+    "claim": "The framework targets slow, reference‑free assessment, offering proxies for correctness and passage usefulness, and integrates with common RAG toolkits such as llama‑index and Langchain.",
+    "label": false,
+    "old": 0.994,
+    "new": 0.9942385539622499
+  },
+  {
+    "claim": "CARROT yields roughly a 63 % performance gain over baseline models, as shown by the experimental results.",
+    "label": false,
+    "old": 0.023,
+    "new": 0.022964188767607956
+  },
+  {
+    "claim": "IGMiRAG improves over the state‑of‑the‑art baseline by 4.8 % in Exact Match (EM) and 11.5 % in F1 overall【1】.",
+    "label": false,
+    "old": 0.011,
+    "new": 0.011156974719366315
+  },
+  {
+    "claim": "DDRO improves MRR@10 on the MS MARCO document benchmark by 16.3%",
+    "label": false,
+    "old": 0.118,
+    "new": 0.11828787688794253
+  },
+  {
+    "claim": "DDRO directly optimizes GenIR models with pairwise ranking supervision, aligning token‑level docid generation to document‑level relevance with any reward model or reinforcement step.",
+    "label": false,
+    "old": 0.065,
+    "new": 0.06516243397983511
+  },
+  {
+    "claim": "DDRO therefore requires the need for explicit reward modeling and reinforcement fine‑tuning, simplifying the training pipeline compared to RLRF.",
+    "label": false,
+    "old": 0.002,
+    "new": 0.002457804114827619
+  }
+]

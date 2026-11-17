@@ -1,0 +1,19 @@
+{
+  "n_answerable": 34,
+  "n_unanswerable": 10,
+  "threshold": 0.4,
+  "A": {
+    "correct": 26,
+    "hallucinated": 1
+  },
+  "B": {
+    "correct": 26,
+    "wrongly_refused": 0,
+    "hallucinated": 1
+  },
+  "D": {
+    "correct": 31,
+    "wrongly_refused": 0,
+    "hallucinated": 0
+  }
+}

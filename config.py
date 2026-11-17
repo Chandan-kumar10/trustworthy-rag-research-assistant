@@ -33,7 +33,7 @@ LLM_MODEL = "claude-sonnet-5-5"
 # Retrieval / trust
 TOP_K_RETRIEVE = 20
 TOP_K_RERANK = 6
-ABSTAIN_THRESHOLD = 0.2
+ABSTAIN_THRESHOLD = 0.4
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 GROQ_MODEL = "openai/gpt-oss-120b"

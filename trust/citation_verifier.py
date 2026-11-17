@@ -54,6 +54,8 @@ def _windows(passage, size=60, step=30):
     return [" ".join(words[i:i + size]) for i in range(0, len(words), step)]
 
 
+
+
 def _best_entailment(claim, passage_items):
     """passage_items: list of (source_n, passage_text). Returns (score, source_n, window_text)."""
     model = _load()
